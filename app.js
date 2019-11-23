@@ -16,7 +16,7 @@ document.write('<style>.mdui-appbar .mdui-toolbar{height:56px;font-size:1pc}.mdu
 // 初始化页面，并载入必要资源
 function init(){
     document.siteName = $('title').html();
-    $('body').addClass("mdui-theme-primary-teal mdui-theme-accent-blue mdui-theme-layout-dark");
+    $('body').addClass("mdui-theme-primary-blue-grey mdui-theme-accent-blue");
     var html = `
 <header class="mdui-appbar mdui-color-theme"> 
    <div id="nav" class="mdui-toolbar mdui-container"> 
@@ -73,7 +73,21 @@ function list(path){
 	var content = `
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
-	 
+	 <div class="mdui-row"> 
+	  <ul class="mdui-list"> 
+	   <li class="mdui-list-item th"> 
+	    <div class="mdui-col-xs-12 mdui-col-sm-7">
+	     文件
+	    </div> 
+	    <div class="mdui-col-sm-3 mdui-text-right">
+	     修改时间
+	    </div> 
+	    <div class="mdui-col-sm-2 mdui-text-right">
+	     大小
+	    </div> 
+	    </li> 
+	  </ul> 
+	 </div> 
 	 <div class="mdui-row"> 
 	  <ul id="list" class="mdui-list"> 
 	  </ul> 
